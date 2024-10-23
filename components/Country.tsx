@@ -1,4 +1,15 @@
-export default function CountryDetails(data: any) {
+interface CountryInfo {
+  name: string;
+  population: string;
+  capital: string;
+}
+
+interface CountryDetailsProps {
+  countryInfo?: CountryInfo;
+  url: string;
+}
+
+export default function CountryDetails(data: CountryDetailsProps) {
   return (
     <div>
       {data.countryInfo ? (
