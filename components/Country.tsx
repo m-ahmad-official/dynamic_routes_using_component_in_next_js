@@ -23,7 +23,7 @@ export default function CountryDetails(data: CountryDetailsProps) {
           </h1>
         </div>
       ) : (
-        <h1>{data.url} Country Not Find</h1>
+        <h1>{data.url} Country Not Found</h1>
       )}
     </div>
   );
